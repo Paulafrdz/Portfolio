@@ -1,0 +1,42 @@
+:root {
+  /* Principal colors*/
+  --color-burgundy: #65001E;
+  --color-pink-light: #FFE9EC;
+  --color-pink: #FFBACF;
+  --color-mauve: #B05D76;
+  --color-dark-gray: #2B2B2B;
+  
+  /* Neutral colors */
+  --color-black: #0A0A0A;
+  --color-gray-900: #1A1A1A;
+  --color-gray-700: #404040;
+  --color-gray-500: #737373;
+  --color-gray-300: #D4D4D4;
+  --color-gray-100: #F5F5F5;
+  --color-gray-50: #FAFAFA;
+  --color-white: #FFFFFF;
+  
+  /* Typografy */
+  --font-family: "IBM Plex Sans", sans-serif;  
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-weight-xs: 300;
+  --font-weight-s: 500;
+  --font-weight-m: 600;
+  --font-weight-L: 800;
+  
+  /* Espace */
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 0.75rem;   /* 12px */
+  --spacing-4: 1rem;      /* 16px */
+
+  /* Border */
+  --radius-sm: 17px;    
+  --radius-md: 20px;      
+  
+  
+ 
+}
