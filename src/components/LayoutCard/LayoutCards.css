@@ -1,0 +1,29 @@
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 96px 0;
+}
+
+.grid-hole {
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .layout-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-hole {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+  }
+}
