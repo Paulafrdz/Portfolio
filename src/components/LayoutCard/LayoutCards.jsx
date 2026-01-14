@@ -1,5 +1,5 @@
-import ProjectCard from "./ProjectCard";
-import "./project-grid.css";
+import ProjectCard from "../Card/ProjectCard";
+import "./LayoutCards.css";
 
 export default function LayoutCards({ cards }) {
   return (

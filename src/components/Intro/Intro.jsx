@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
-    <section style={{ padding: "40px 80px" }}>
+    <section style={{ padding: "80px 80px" }}>
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

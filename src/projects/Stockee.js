@@ -1,35 +1,56 @@
-import img1 from "/img/stockee-1.webp";
-import img2 from "/img/stockee-2.webp";
+import login from "../assets/login.png"
+import dashboard from "../assets/dashboard.png"
+import inventary from "../assets/inventary.png"
+import efficiency from "../assets/efficiency.png"
+import efficiency2 from "../assets/efficiency2.png"
+import orders from "../assets/orders.png"
+
 
 export const stockeeCards = [
   {
     index: "01",
-    title: "Market analysis",
-    description: "Deep insights into financial behavior.",
-    image: img1,
+    title: "Authentication flow",
+    description: "Clear and accessible login experience with validation, user feedback and protected access to the platform.",
+    image: login,
     variant: "dark",
   },
   {
     index: "02",
-    title: "Real-time data",
-    description: "Always up to date.",
-    image: img2,
+    title: "Dashboard overview",
+    description: "Centralized dashboard to quickly understand stock status, alerts and key metrics at a glance.",
+    image: dashboard,
     variant: "light",
   },
   null,
   {
     index: "03",
-    title: "Security",
-    description: "Enterprise-grade encryption.",
-    image: img1,
+    title: "Inventory management",
+    description: "Full inventory control with ingredient listing, editing, minimum stock levels and real-time updates.",
+    image: inventary,
     variant: "medium",
   },
   null,
   {
     index: "04",
-    title: "Scalability",
-    description: "Built for growth.",
-    image: img2,
+    title: "Smart stock alerts",
+    description: "Low-stock alerts and recommendations based on consumption patterns to prevent shortages.",
+    image: orders,
     variant: "dark",
   },
+  null,
+   {
+    index: "05",
+    title: "Analytics & insights",
+    description: "Visual insights into consumption trends and stock performance to support better decisions.",
+    image: efficiency,
+    variant: "light",
+  },
+  {
+    index: "06",
+    title: "Waste & efficiency",
+    description: "Waste registration and categorization to analyze losses and improve operational efficiency.",
+    image: efficiency2,
+    variant: "medium",
+  },
+
 ];
