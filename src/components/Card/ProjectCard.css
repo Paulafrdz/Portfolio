@@ -1,33 +1,31 @@
 .service-card {
-  max-width: 420px;
-  min-height: 530px;
+  min-height: 500px;
+  height: 500px;
   padding: 48px 40px;
   border-radius: 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
 }
 
 /* VARIANTS */
 .service-card.dark {
   background: var(--color-burgundy);
   color: #ffffff;
-
 }
 
 .service-card.light {
   background: var(--color-pink-light);
   color: #0b0b0f;
   border: solid 0.1px var(--color-pink);
-
 }
 
 .service-card.medium {
   background: var(--color-mauve);
   color: #0b0b0f;
   border: solid 0.1px var(--color-burgundy);
-
 }
 
 /* INDEX */
@@ -35,25 +33,48 @@
   font-size: 14px;
   opacity: 0.5;
   letter-spacing: 0.08em;
+  flex-shrink: 0;
 }
 
-/* IMAGE */
+/* IMAGE CONTAINER */
 .service-image {
   margin: 32px 0;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .service-image img {
   width: 100%;
-  object-fit: contain;  
-  border-radius: 10px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.service-image--contain img {
+  object-fit: contain;
+  object-position: center;
 }
 
 /* CONTENT */
+.service-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .service-content h3 {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 16px;
+  margin-top: 0;
+  flex-shrink: 0;
 }
 
 .service-content p {
@@ -67,9 +88,34 @@
   .service-card {
     padding: 36px 28px;
     border-radius: 36px;
+    height: 480px;
+    min-height: 480px;
+  }
+
+  .service-image {
+    height: 160px;
+    margin: 24px 0;
   }
 
   .service-content h3 {
     font-size: 28px;
+  }
+
+  .service-content p {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .service-image {
+    height: 140px;
   }
 }

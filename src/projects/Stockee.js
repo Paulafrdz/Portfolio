@@ -12,7 +12,7 @@ export const stockeeCards = [
     title: "Authentication flow",
     description: "Clear and accessible login experience with validation, user feedback and protected access to the platform.",
     image: login,
-    variant: "dark",
+    variant: "dark"
   },
   {
     index: "02",

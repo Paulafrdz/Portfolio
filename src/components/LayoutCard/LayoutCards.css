@@ -1,19 +1,24 @@
 .layout-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 96px 0;
-  margin: 15px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px;
+  padding: 96px 40px; 
+  max-width: 1300px; 
+  margin: 0 auto; 
+  width: 100%; 
 }
 
 .grid-hole {
   pointer-events: none;
+  visibility: hidden; 
 }
 
-/* Responsive */
+/* Responsive - Tablet */
 @media (max-width: 1024px) {
   .layout-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 80px 32px;
   }
 
   .grid-hole {
@@ -21,10 +26,33 @@
   }
 }
 
+/* Responsive - Mobile Large */
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 64px 24px;
+  }
+}
+
+/* Responsive - Mobile Small */
 @media (max-width: 640px) {
   .layout-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 48px 16px;
+  }
+}
 
+/* ===== VARIANTE ALTERNATIVA (si quieres ancho fijo) ===== */
+/* Usa esta si prefieres que las cards tengan un ancho máximo */
+.layout-grid--fixed-width {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
+  justify-content: center; /* ✅ Centra las cards */
+}
+
+@media (max-width: 1024px) {
+  .layout-grid--fixed-width {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

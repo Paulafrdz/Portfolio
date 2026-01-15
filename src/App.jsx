@@ -7,6 +7,8 @@ import './App.css'
 import Intro from './components/Intro/Intro.jsx';
 import StoryCard from './components/StoryCard/StoryCard.jsx';
 import { stockeeCards } from "./projects/Stockee.js";
+import { oliwaCards } from "./projects/Oliwa.js";
+import { pelusaCards } from "./projects/Pelusa.js";
 
 
 
@@ -22,11 +24,13 @@ function App() {
 
   return (
     <>
-    <motion.div style={{ backgroundColor: bg, minHeight: "100vh" }}>
+    <motion.div style={{ "--pageBg": bg }} className="page">
       <ContactButton />
       <Intro/>
       <StoryCard/>
       <LayoutCards cards={stockeeCards} />
+      <LayoutCards cards={oliwaCards} />
+      <LayoutCards cards={pelusaCards} />
     
     </motion.div>
       

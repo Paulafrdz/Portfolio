@@ -1,0 +1,43 @@
+.intro {
+  padding: 120px 80px;
+}
+
+.intro__title {
+  font-size: 96px;
+  line-height: 1.05;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+}
+
+.intro__first {
+  color: var(--color-burgundy);
+}
+
+.intro__subtitle {
+  font-size: 40px;
+  line-height: 1.05;
+  margin: 0;
+}
+
+/* ✅ iPhone / mobile */
+@media screen and (max-width: 430px) {
+  .intro {
+    padding: 100px 40px;
+  }
+
+  .intro__title {
+    font-size: clamp(44px, 11vw, 56px);
+    line-height: 1.02;
+    margin-bottom: 14px;
+  }
+
+  .intro__rest {
+    display: block;
+  }
+
+  .intro__subtitle {
+    font-size: clamp(20px, 6vw, 28px);
+    line-height: 1.1;
+    max-width: 18ch; 
+  }
+}

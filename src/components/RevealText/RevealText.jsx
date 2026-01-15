@@ -10,7 +10,7 @@ export default function RevealText({
   const { scrollYProgress } = useScroll({
     target: ref,
     // rango más largo para que llegue hasta el final de la card
-    offset: ["start 80%", "end 40%"],
+    offset: ["start 50%", "end 50%"],
   });
 
   const n = lines.length;
