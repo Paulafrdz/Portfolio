@@ -83,6 +83,78 @@
   opacity: 0.75;
 }
 
+/* ZOOM */
+.service-image {
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.02);
+}
+
+.service-image:active {
+  transform: scale(0.98);
+}
+
+.service-image img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.service-image:hover img {
+  filter: brightness(0.9);
+  transform: scale(1.05);
+}
+
+.service-image__zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.service-image:hover .service-image__zoom {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.service-image:active .service-image__zoom {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.service-image:focus-visible {
+  outline: 3px solid var(--color-mauve);
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .service-image__zoom {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-image__zoom {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .service-card {

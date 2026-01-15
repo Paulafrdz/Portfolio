@@ -1,24 +1,51 @@
 .layout-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 50px;
-  padding: 96px 40px; 
-  max-width: 1300px; 
-  margin: 0 auto; 
-  width: 100%; 
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  padding: 96px 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
 }
 
+/* Tus huecos siguen ocupando celda, pero no se ven */
 .grid-hole {
   pointer-events: none;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
-/* Responsive - Tablet */
+/* ===== Laptop / desktop pequeño ===== */
+@media (max-width: 1300px) {
+  .layout-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    width: auto;
+  }
+}
+
+/* ===== Tablet ===== */
 @media (max-width: 1024px) {
   .layout-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 32px;
-    padding: 80px 32px;
+    padding: 80px 28px;
+    width: auto;
+  }
+
+  /* Si no quieres holes en tablet */
+  .grid-hole {
+    display: none;
+  }
+}
+
+/* ===== Mobile (general) ===== */
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    padding: 56px 18px;
+    width: auto;
+
   }
 
   .grid-hole {
@@ -26,33 +53,11 @@
   }
 }
 
-/* Responsive - Mobile Large */
-@media (max-width: 768px) {
+/* ===== iPhone (≤480) ===== */
+@media (max-width: 480px) {
   .layout-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 64px 24px;
-  }
+  grid-template-columns:  repeat(1, minmax(0, 1fr));
+  margin: 20px;
+  padding: 56px 18px; /* en móvil */
 }
-
-/* Responsive - Mobile Small */
-@media (max-width: 640px) {
-  .layout-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 48px 16px;
-  }
-}
-
-/* ===== VARIANTE ALTERNATIVA (si quieres ancho fijo) ===== */
-/* Usa esta si prefieres que las cards tengan un ancho máximo */
-.layout-grid--fixed-width {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
-  justify-content: center; /* ✅ Centra las cards */
-}
-
-@media (max-width: 1024px) {
-  .layout-grid--fixed-width {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
 }

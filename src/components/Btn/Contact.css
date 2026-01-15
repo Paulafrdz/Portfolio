@@ -90,7 +90,6 @@
 
 /* Options style */
 .contact-option.email, .contact-option.phone{
-  background-color: var(--color-pink);
   color: var(--color-burgundy);
 }
 
@@ -143,12 +142,12 @@
 @media (max-width: 768px) {
   .contact-button-container {
     bottom: 1.5rem;
-    right: 1.5rem;
+    right: 1rem;
   }
 
   .contact-button {
-    width: 64px;
-    height: 56px;
+    width: 105px;
+    height: 40px;
   }
 
   .contact-options {
