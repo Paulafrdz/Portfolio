@@ -19,7 +19,7 @@ function App() {
   const bg = useTransform(
     scrollYProgress,
     [0, 1.35],
-    ["#d8a1a8", "#ffffff"] // granate claro -> blanco
+    ["#ebc3c8", "#B05D76"] // granate claro -> blanco
   );
 
   return (
