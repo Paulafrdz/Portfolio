@@ -11,6 +11,42 @@
   font-size: 24px;
   line-height: 1.6;
   position: relative;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-logos {
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.story-logos a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-logos img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.story-logos a:hover img {
+  transform: scale(1.15);
+  opacity: 1; 
+}
+
+.logo-email{
+  margin-top: 9px;
 }
 
 @media screen and (max-width: 430px) {
@@ -25,3 +61,4 @@
     line-height: 1.55;
   }
 }
+
