@@ -1,26 +1,23 @@
-.rlc {
-  max-width: max-content;
-}
 
-.rlc-line {
+
+.reveal-line {
   position: relative;
   display: block;
   font-size: clamp(22px, 2.2vw, 34px);
   line-height: 1.5;
   font-weight: 500;
-  margin: 0;
 }
 
-.rlc-base {
+.reveal-base {
   display: block;
   color: rgba(255, 255, 255, 0.35);
 }
 
-.rlc-active {
+.reveal-active {
   position: absolute;
   inset: 0;
   display: block;
-  color: #ffffff;
+  color: var(--color-pink-light);
   pointer-events: none;
   will-change: clip-path;
 }

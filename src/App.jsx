@@ -9,6 +9,7 @@ import StoryCard from './components/StoryCard/StoryCard.jsx';
 import { stockeeCards } from "./projects/Stockee.js";
 import { oliwaCards } from "./projects/Oliwa.js";
 import { pelusaCards } from "./projects/Pelusa.js";
+import TechStack from './components/TechStack/TechStack.jsx';
 
 
 
@@ -16,24 +17,21 @@ function App() {
   const [count, setCount] = useState(0)
   const { scrollYProgress } = useScroll();
 
-  const bg = useTransform(
-    scrollYProgress,
-    [0, 1.35],
-    ["#ebc3c8", "#B05D76"] // granate claro -> blanco
-  );
 
   return (
     <>
-    <motion.div style={{ "--pageBg": bg }} className="page">
+    <div className="container">
+    <motion.div className="page">
       <ContactButton />
       <Intro/>
       <StoryCard/>
+      <TechStack />
       <LayoutCards cards={stockeeCards} />
       <LayoutCards cards={oliwaCards} />
       <LayoutCards cards={pelusaCards} />
     
     </motion.div>
-      
+      </div>
     </>
   )
 }

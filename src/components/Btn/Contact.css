@@ -2,14 +2,14 @@
 .contact-button-container {
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: calc((100vw - 1400px) / 2 + 1rem); 
   z-index: 100;
 }
 
 /* Botón Principal - Hamburger */
 .contact-button {
   width: 130px;
-  height: 40px;
+  height: 43px;
   border-radius: var( --radius-sm);
   background: var(--color-burgundy);
   border: none;
@@ -139,6 +139,12 @@
 }
 
 /* Responsive */
+@media (max-width: 1440px) {
+  .contact-button-container {
+    right: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-button-container {
     bottom: 1.5rem;
