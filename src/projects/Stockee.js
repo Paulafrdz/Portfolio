@@ -5,6 +5,11 @@ import efficiency from "../assets/efficiency.png"
 import efficiency2 from "../assets/efficiency2.png"
 import orders from "../assets/orders.png"
 
+export const stockeeProject = {
+  name: "Stockee",
+  description: "A full-stack web application designed to help small businesses manage inventory, track sales, and prevent stock shortages through real-time data, alerts, and analytics. Focused on usability, clarity, and efficient day-to-day operations.",
+  tags: ["React", "Spring Boot", "MySQL", "REST API", "JWT Authentication"],
+};
 
 export const stockeeCards = [
   {

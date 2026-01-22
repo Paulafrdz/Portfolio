@@ -6,6 +6,12 @@ import OPatient from "../assets/O-patient.png"
 import OProfile from "../assets/O-profile.png"
 
 
+export const oliwaProject = {
+  name: "Oliwa",
+  description: "A web-based management tool for veterinary clinics that centralizes appointments, patients, and daily workflows. The platform provides an at-a-glance overview of schedules and clinic activity, improving organization and operational efficiency.",
+  tags: ["React", "Spring Boot", "MySQL", "REST API"],
+};
+
 export const oliwaCards = [
   {
     index: "01",

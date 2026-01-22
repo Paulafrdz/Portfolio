@@ -3,6 +3,13 @@ import cats from "../assets/P-cats.png"
 import favorites from "../assets/P-favorites.png"
 import form from "../assets/P-form.png"
 
+
+export const pelusaProject = {
+  name: "Pelusa Society",
+  description: "A responsive web application that connects animals in need of adoption with potential families. Designed with a friendly, emotional user experience, it allows users to browse animals, save favorites, and complete adoption requests in a simple and intuitive way.",
+  tags: ["React", "JavaScript", "CSS"],
+};
+
 export const pelusaCards = [
   {
     index: "01",
