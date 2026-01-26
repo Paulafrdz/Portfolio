@@ -1,5 +1,5 @@
 .tech-stack-container {
-  padding: 20px 12px;
+  padding: 50px 12px;
 }
 
 .tech-stack-title {
@@ -70,6 +70,12 @@
   object-fit: contain;
 }
 
+
+@media (max-width: 1024px) {
+  .tech-sections{
+    gap: 15px;
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
   .tech-stack-title {
@@ -79,5 +85,9 @@
   .tech-badge {
     width: 4rem;
     height: 4rem;
+  }
+
+  .tech-sections{
+   gap: 10px;
   }
 }

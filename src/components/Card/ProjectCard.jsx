@@ -16,7 +16,7 @@ export default function ProjectCard({
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
     >
       <span className="service-index">{`{ ${index} }`}</span>
 

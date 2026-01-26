@@ -33,15 +33,7 @@ const ContactButton = () => {
 
       {/* Options */}
       <div className={`contact-options ${isOpen ? 'open' : ''}`}>
-        <button
-          className="contact-option phone"
-          onClick={handleCall}
-          aria-label="Call"
-        >
-          <Phone className="icon" size={20} />
-          <span className="label">Call 0414 105 048</span>
-        </button>
-
+    
         <button
           className="contact-option email"
           onClick={handleEmail}

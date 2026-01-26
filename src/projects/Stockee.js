@@ -7,7 +7,7 @@ import orders from "../assets/orders.png"
 
 export const stockeeProject = {
   name: "Stockee",
-  description: "A full-stack web application designed to help small businesses manage inventory, track sales, and prevent stock shortages through real-time data, alerts, and analytics. Focused on usability, clarity, and efficient day-to-day operations.",
+  description: "Stockee is a full-stack inventory management with real-time stock tracking, order recommendations, and insights on consumption and waste. It features a clear and interactive interface built with React and MUI X Charts to support efficient daily operations.",
   tags: ["React", "Spring Boot", "MySQL", "REST API", "JWT Authentication"],
 };
 

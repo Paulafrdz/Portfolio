@@ -10,13 +10,18 @@ export default function StoryCard() {
             <div className="story-card">
                 <RevealText
                     lines={[
-                        "Hi! I'm Paula, a Frontend Developer who enjoys building clean, functional, and responsive web applications. ",
-                        "I love turning ideas into real products through code and paying attention",
-                        "o the small details that make an interface feel smooth and polished.",
-                        "Most of my experience comes from personal projects, where I've worked with real features like authentication, CRUD operations, API integration, and dynamic UI components.",
-                        "I'm always learning, improving, and challenging myself with new tools and best practices.",
+                        "Hi! I'm Paula, a Full-Stack Developer who enjoys building clean, functional, and",
+                        "reliable web applications.",
+                        "",
+                        "Most of my experience comes from personal and training projects, where I've worked",
+                        "on complete applications involving frontend and backend logic, API integration,",
+                        "authentication, and CRUD operations.",
+                        "",
+                        "I'm a proactive learner who enjoys problem-solving and continuously improving my skills",
+                        "while building real, well-structured products.",
 
                         
+
                     ]}
                     
                      />
