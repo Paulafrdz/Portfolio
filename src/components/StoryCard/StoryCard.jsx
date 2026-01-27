@@ -1,4 +1,4 @@
-import RevealText from "/Users/Paula/Desktop/Portfolio/src/components/RevealText/RevealText.jsx";
+import RevealText from "../RevealText/RevealText.jsx";
 import email from "../../assets/email-9-svgrepo-com (2).svg"
 import github from "../../assets/github-outline-fill-svgrepo-com (1).svg"
 import linkedin from "../../assets/linkedin-svgrepo-com (3).svg"
