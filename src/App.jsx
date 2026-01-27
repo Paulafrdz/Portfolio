@@ -1,9 +1,9 @@
 import { useState, useRef } from 'react'
 import { motion, useScroll, useTransform, MotionConfig } from "framer-motion";
-import ContactButton from './components/Btn/Contact.jsx';
-import LayoutCards from "./components/LayoutCard/LayoutCards.jsx";
 import "./components/styles/Variables.css"
 import './App.css'
+import ContactButton from './components/Btn/Contact.jsx';
+import LayoutCards from "./components/LayoutCard/LayoutCards.jsx";
 import Intro from './components/Intro/Intro.jsx';
 import StoryCard from './components/StoryCard/StoryCard.jsx';
 import { stockeeProject, stockeeCards } from "./projects/Stockee.js";
@@ -27,13 +27,13 @@ function App() {
       <div className="page">
         <ContactButton />
         
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false, margin: "-100px" }}
-        >
-          <Intro />
+        <motion.div 
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8 }} 
+        viewport={{ once: false, margin: "-100px" }} > 
+
+        <Intro />
         </motion.div>
 
         <motion.div
@@ -51,10 +51,10 @@ function App() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: false, margin: "-100px" }}
         >
-          <TechToProjectsScene/>
+          <TechToProjectsScene />
         </motion.div>
 
-        
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
