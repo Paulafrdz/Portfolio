@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useMemo, useRef, useEffect, useState } from "react";
-import "./Revealtext.css";
+import "./RevealText.css";
 
 function RevealLine({ line, i, total, scrollYProgress }) {
   const start = i / total;

@@ -1,5 +1,3 @@
-// TechStack.jsx
-import React from 'react';
 import './TechStack.css';
 
 const TechStack = () => {

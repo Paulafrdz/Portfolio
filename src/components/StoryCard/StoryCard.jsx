@@ -2,7 +2,7 @@ import RevealText from "/Users/Paula/Desktop/Portfolio/src/components/RevealText
 import email from "../../assets/email-9-svgrepo-com (2).svg"
 import github from "../../assets/github-outline-fill-svgrepo-com (1).svg"
 import linkedin from "../../assets/linkedin-svgrepo-com (3).svg"
-import "./Storycard.css";
+import "./StoryCard.css";
 
 export default function StoryCard() {
     return (
