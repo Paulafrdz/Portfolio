@@ -1,6 +1,6 @@
 import OLogin from "../assets/O-login.png"
 import ODashboard from "../assets/O-dashboard.png"
-import OCalendar from "../assets/O-Calendar.png"
+import OCalendar from "../assets/O-calendar.png"
 import OAppoitment from "../assets/O-appointment.png"
 import OPatient from "../assets/O-patient.png"
 import OProfile from "../assets/O-profile.png"
